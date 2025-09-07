@@ -12,6 +12,8 @@ If necessary, show operations on the browser or on the server as comments on the
     server-->>browser: [{"content": form data, date: "2025-1-1"}]
     deactivate server
 
+    Note right of server: The server returns a 302 with the Location header defining the `notes` page
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
     server-->>browser: HTML document
